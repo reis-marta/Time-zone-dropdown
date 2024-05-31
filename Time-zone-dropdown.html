@@ -10,13 +10,13 @@
   <body>
     <select id="city">
       <option value="">Select a city</option>
-      <option value="Paris">Paris 🇫🇷</option>
-      <option value="Tokio">Tokio 🇯🇵</option>
-      <option value="Sydney">Sydney 🇦🇺</option>
+      <option value="Europe/Paris">Paris 🇫🇷</option>
+      <option value="Asia/Tokio">Tokio 🇯🇵</option>
+      <option value="Australia/Sydney">Sydney 🇦🇺</option>
     </select>
     <script>
       function showDate(event) {
-        if (event.target.value.lenght > 0) {
+        if (event.target.value.length > 0) {
           let currentTime = moment()
             .tz(event.target.value)
             .format("dddd, MMMM D, YYYY h:m A");
